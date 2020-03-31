@@ -10,17 +10,22 @@
 </head>
 
 <body>
-    <main>
+    <header>
         <h1>Number Guessing Game</h1>
+    </header>
 
-        <form>
-            <label for="number-guess">Enter a number (between 1 and 20): </label>
-            <input type="number" id="number-guess" min="1" max="20">
-            <input type="submit" id="submit-button">
-        </form>
+    <main>
+        <p>Guess a number between 1 and 20 (including 1 and 20). You have 4 chances.</p>
+        
+
+        <label for="number-guess">Enter a number (between 1 and 20): </label>
+        <input type="number" id="number-guess" min="1" max="20">
+        <input type="submit" id="submit-button">
 
         <div>
-            <span id="tries-remain">4</span>
+            <p id="tries-container">Tries remaining: <span id="tries-left"></span></p>
+            
+            <span id="result"></span>
         </div>
         
     </main>
