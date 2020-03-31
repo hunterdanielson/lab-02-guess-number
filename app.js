@@ -20,8 +20,6 @@ function submit() {
     
     const userGuess = Number(input.value);
 
-    
-
     triesCount--;
     triesLeft.textContent = triesCount;
     
@@ -30,9 +28,9 @@ function submit() {
 
     if (checkedNum === 0) {
         result.textContent = 'You win!';
-        button.disabled = true;
+        disableGameplay();
         triesContainer.style.display = 'none';
-        // break out of function
+        // break out of function because of win
         return;
 
     } else if (checkedNum === -1) {
@@ -45,10 +43,16 @@ function submit() {
     
     // run out of tries
     if (triesCount <= 0) {
-        button.disabled = true;
+        disableGameplay();
         result.textContent = 'Sorry, you lose';
     }
     
+}
+
+
+function disableGameplay() {
+    button.disabled = true;
+
 }
 
 

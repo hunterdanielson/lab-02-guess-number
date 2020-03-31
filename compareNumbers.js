@@ -9,6 +9,6 @@ export default function compareNumbers(guess, correctNumber) {
         // too high
         return 1;
     } else {
-        alert('Not a number');
+        throw new Error('Not a number');
     }
 }

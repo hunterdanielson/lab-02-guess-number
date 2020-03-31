@@ -1,8 +1,19 @@
-body {
-
+html {
     background-image: url('https://i.imgflip.com/1g0mld.jpg');
-    
     background-size: cover;
 }
+body {
+    height: 450px;
+    width: 50%;
+    border: 3px solid #BFA89E;
+    box-shadow: 3px 5px #8B786D;
+    background-color: #EBF5EE;
+}
 
-/* https://static.paraoscuriosos.com/img/articles/3480/800x800/585d2fc4cda24_6.jpg */
+header {
+    color: #283044;
+}
+main {
+    color: #78A1BB;
+}
+
