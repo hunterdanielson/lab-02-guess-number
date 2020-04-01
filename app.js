@@ -3,13 +3,15 @@ import compareNumbers from './compareNumbers.js';
 // get html elements
 const input = document.getElementById('number-guess');
 const button = document.getElementById('submit-button');
+const resetButton = document.getElementById('reset-button');
 const triesLeft = document.getElementById('tries-left');
 const result = document.getElementById('result');
 const triesContainer = document.getElementById('tries-container');
 
 // generate a random number between 1 and 20
 const answerNumber = Math.ceil(Math.random() * 20);
-console.log(answerNumber);
+// uncomment line below to cheat and see number in console
+// console.log(answerNumber);
 
 let triesCount = 4;
 triesLeft.textContent = triesCount;
@@ -55,6 +57,14 @@ function disableGameplay() {
 
 }
 
+function reset() {
+    button.disabled = false;
+    triesCount = 4;
+    triesLeft.textContent = triesCount;
+    result.textContent = '';
+
+}
 
 // event listeners
 button.addEventListener('click', submit);
+resetButton.addEventListener('click', reset);
