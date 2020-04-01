@@ -1,0 +1,19 @@
+html {
+    background-image: url('https://i.imgflip.com/1g0mld.jpg');
+    background-size: cover;
+}
+body {
+    height: 59vh;
+    width: 49%;
+    border: 3px solid #BFA89E;
+    box-shadow: 3px 5px #8B786D;
+    background-color: #EBF5EE;
+}
+
+header {
+    color: #283044;
+}
+main {
+    color: #78A1BB;
+}
+
